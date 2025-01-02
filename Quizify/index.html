@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- welcome -->
+    <div class="welcome-screen " id="welcome-screen">
+        <h1>Welcome to Quizify</h1>
+        <label for="select-topic">Choose a topic:</label>
+        <select id="select-topic">
+            <option value="general">G.K</option>
+            <option value="tech">Technology</option>
+            <option value="sports">Sports</option>
+            <option value="history">History</option>
+            <option value="geography">Geography</option>
+            <option value="literature">Literature</option>
+            <option value="movies">Movies</option>
+        </select>
+        <br>
+        <div class="instructions">
+            <p>~ Select your preferred quiz topic before starting.<br>
+                ~ Answer each question by choosing the correct option.<br>
+                ~ Complete all questions to see your score and results.<br>
+                ~ Each correct answer earns you 1 point.<br>
+                ~ Stay focused and enjoy the quiz!
+            </p>
+        </div>
+        <button id="start-btn">Start Quiz</button>
+    </div>
+    <!-- quiz -->
+    <div class="quiz-screen hidden">
+        <div class="title"><h1>Quizify</h1></div>
+        <div class="topic"><h2>Topic </h2></div>
+        <div class="quiz-question">
+            <h3></h3>
+        </div>
+            <ul class="options"></ul>    
+        <div class="next-question">
+            <button >Next</button>
+        </div>
+    </div>
+    <!-- results -->
+    <div class="result-screen hidden">
+        <h1>Quiz Results</h1>
+        <p>You scored <span id="score"></span> out of <span id="total-questions"></span>.</p>
+        <p>Accuracy: <span id="accuracy"></span></p>
+        <button id="restart-btn">Restart Quiz</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
